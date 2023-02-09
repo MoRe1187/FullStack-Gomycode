@@ -1,0 +1,11 @@
+h1 ~ p {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+}
+
+article {
+  height: 5%;
+  width: 100%;
+}
