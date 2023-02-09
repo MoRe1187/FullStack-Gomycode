@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
-      <div class="navleft">
-        <img src="./images/logo.svg" alt="" />
+      <div class="first-part">
+        <img class="menu" src="./images/icon-menu.svg" alt="" />
+        <img class="logo" src="./images/logo.svg" alt="" />
         <ul>
           <li>Collections</li>
           <li>Men</li>
@@ -18,44 +19,50 @@
           <li>Contact</li>
         </ul>
       </div>
-      <div class="navright">
+      <div class="second-part">
         <img src="./images/icon-cart.svg" alt="" />
-        <img src="./images/image-avatar.png" alt="" />
+        <img class="avatar" src="./images/image-avatar.png" alt="" />
       </div>
     </nav>
-    <section>
-      <div class="images">
-        <img class="main" src="./images/image-product-1.jpg" alt="" />
-        <div class="thumbnails">
+    <div class="container">
+      <div class="all-images">
+        <div class="main-image">
+          <img src="./images/image-product-1.jpg" alt="" />
+        </div>
+        <div class="images">
           <img src="./images/image-product-1-thumbnail.jpg" alt="" />
-          <img src="./images/image-product-2-thumbnail.jpg" alt="" />
-          <img src="./images/image-product-3-thumbnail.jpg" alt="" />
-          <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+          <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+          <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+          <img src="./images/image-product-1-thumbnail.jpg" alt="" />
         </div>
       </div>
-      <div class="text">
-        <span>Sneaker Company</span>
-        <h3>Fall Limited Edition Sneakers</h3>
+      <div class="information">
+        <span>SNEAKER COMPANY</span>
+        <h1>Fall Limited Edition Sneakers</h1>
         <p>
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they'll withstand everything
           the weather can offer.
         </p>
-        <div class="price">
-          <h4>$125.00</h4>
-          <h5>50%</h5>
-          <p>$250.00</p>
+        <div class="prices">
+          <div class="principal">
+            <span class="new-price">$125.00</span>
+            <div class="promotion">50%</div>
+          </div>
+          <span class="old-price">$250.00</span>
         </div>
-        <div class="submit">
-          <div class="counter">
+        <div class="last">
+          <div class="qte">
             <img src="./images/icon-minus.svg" alt="" />
-            <span>0</span>
+            <p>0</p>
             <img src="./images/icon-plus.svg" alt="" />
           </div>
-          <div class="submit"></div>
-          <span>Add to cart</span>
+          <button class="btn">
+            <img src="./images/icon-cart.svg" alt="" />
+            <span>Add to cart</span>
+          </button>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
