@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(148, 33, 53);
+    font-family: Helvetica neue, roboto;
+}
+header,article,footer,form {
+    background-color: white;
+    border:  5px solid darkblue;
+    color: darkblue;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+section{
+    background-color: white;
+    border:  5px solid darkblue;
+    color: darkblue;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 250px;
+    text-align:center;
+}
+h1 > img {
+    border: 5px solid black;
+}
+section > img {
+    border:  5px solid black;
+    display: inline;
+}
+a:link {
+    color: orange;
+    text-decoration: none;
+}
+a:visited {
+    color: brown;
+    text-decoration: none;
+}
+form > input {
+    width:max-content;
+}
