@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: max-content;
+  margin: 0 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  margin: 0;
+  position: relative;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back1 {
+  position: absolute;
+  z-index: -1;
+  top: -10rem;
+  right: -10rem;
+  transform: rotate(5deg);
+  width: 50%;
+}
+
+nav > ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn1 {
+  padding: 0.5rem 1rem;
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 25px;
+  color: white;
+}
+
+.menu {
+  display: none;
+}
+
+header {
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 5rem;
+}
+
+header img {
+  height: 100%;
+  width: 35%;
+}
+
+.different {
+  position: relative;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.back2 {
+  position: absolute;
+  bottom: -22.5rem;
+  left: -15rem;
+  z-index: -1;
+  transform: rotate(5deg);
+  width: 50%;
+}
+
+.left {
+  width: 50%;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.point > p {
+  padding-left: 4rem;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.said {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.feedbacks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.feedback img {
+  width: 100px;
+}
+
+.simplify {
+  color: white;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  background-color: hsl(12, 88%, 59%);
+  background-image: url("./images/bg-simplify-section-desktop.svg");
+}
+
+.simplify > h2 {
+  width: 50%;
+}
+
+.btn2 {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 25px;
+  color: hsl(12, 88%, 59%);
+}
+
+footer {
+  color: white;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5rem;
+  background-color: hsl(228, 39%, 23%);
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.updates {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search input {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+
+.last p {
+  font-size: 10px;
+  text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    padding: 3rem 1.5rem;
+  }
+
+  nav > ul,
+  button {
+    display: none;
+  }
+
+  .menu {
+    display: inline;
+  }
+}
