@@ -1,0 +1,39 @@
+Algorithme Checkpoint6
+
+Var
+
+  i,j,k: Entier;
+  P:Chaine de caractère;
+
+Début
+
+  Lire(P);
+
+  //On suppose que le premier indice de la chaine de caractères est 0 et pas 1//
+
+  i:=0;
+  j:=0;
+  k:=0;
+  
+  Tant que P[i]<>'.' Faire :
+     Si P[i]=' ' Alors :
+        j:=j+1;
+        Sinon Si P[i]='A' ou P[i]='a' P[i]='E' ou P[i]='e' P[i]='I' ou P[i]='i' P[i]='O' ou P[i]='o' P[i]='U' ou P[i]='u' P[i]='Y' ou P[i]='y' Alors :
+                 k:=k+1;
+              Fsi
+     Fsi
+     i:=i+1; 
+  Fait
+  
+  i:=i+1;
+  j:=j+1;
+
+  Ecrire("La longueure de la chaine de caractères est",i);
+  Ecrire("Le nombre de mots dans la chaine de caractères est",j);
+  Ecrire("Le nombre de voyelles présentes dans la chaine de caractères est de",k);
+
+Fin
+
+
+
+
