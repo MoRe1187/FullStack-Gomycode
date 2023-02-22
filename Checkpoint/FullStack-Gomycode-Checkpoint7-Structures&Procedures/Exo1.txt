@@ -1,0 +1,43 @@
+Algorithme Distinct sum
+
+Var
+
+  S1,S2:Table_de_Réels[1...100];
+  s:Réel;
+  i,j:Entier;
+
+Début
+
+  Lire(S1);
+  Lire(S2);
+
+  s:=0;
+  i:=0;
+  
+  Tant que i<S1.length Faire :
+       j:=0;
+       Tant que (j<S2.length) ET (S1[i]<>S2[j]) Faire :
+            j:=j+1;
+       Fait
+       Si j=S2.length Alors :
+          s:=s+S1[i];
+       Fsi
+       i:=i+1;
+   Fait
+
+   j=0;
+
+   Tant que j<S2.length Faire :
+       i:=0;
+       Tant que (i<S1.length) ET (S2[j]<>S1[i]) Faire :
+            i:=i+1;
+       Fait
+       Si i=S1.length Alors :
+          s:=s+S2[j];
+       Fsi
+       j:=j+1;
+   Fait            
+
+   Ecrire(s);
+
+Fin

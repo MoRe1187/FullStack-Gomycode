@@ -1,0 +1,94 @@
+Question 1 :
+
+Procédure dot_product (v1,v2:Table_de_réels[1...100],VAR ps:Réel);
+
+Var
+
+  i:Entier;  
+
+Début
+
+  Lire(v1,v2);
+  ps:=0;
+
+  Pour i de 0 à v1.length-1 Faire :
+     ps:=ps+v1[i]*v2[i];
+  Fait
+ 
+  Ecrire("Le produit scalaire des deux vecteurs est",ps);
+
+Fin 
+
+Question 2:
+
+Algorithme Dot product
+
+Var
+  
+  v1,v2::Table_de_réels[1...100];
+  ps:Réel;
+ 
+Début
+  
+  Lire(v1,v2);
+  ps:=0;
+  
+  Si v1.length=v2.length Alors :
+     ps:=dot_product(v1,v2);
+     Si ps=0 Alors :
+       Ecrire("Les deux vecteurs sont orthogonaux");
+       Sinon : Ecrire("Les deux vecteurs ne sont pas orthogonaux");
+     Fsi
+     Sinon : Ecrire("Le produit scalaire est infaisable car les vecteurs sont
+             incompatibles en termes de dimensions");
+  Fsi
+
+Fin
+
+Question 3 :
+
+Fonction dot_product (v1,v2:Table_de_réels[1...100]):Réel;
+
+Var
+
+  ps:Réel;
+  i:Entier;  
+
+Début
+
+  Lire(v1,v2);
+  ps:=0;
+
+  Pour i de 0 à v1.length-1 Faire :
+     ps:=ps+v1[i]*v2[i];
+  Fait
+
+  Ecrire("Le produit scalaire des deux vecteurs est",ps);
+ 
+  Return ps;
+
+Fin 
+
+Algorithme Dot product
+
+Var
+  
+  v1,v2::Table_de_réels[1...100];
+  ps:Réel;
+ 
+Début
+  
+  Lire(v1,v2);
+  ps:=0;
+  
+  Si v1.length=v2.length Alors :
+     ps:=dot_product(v1,v2);
+     Si ps=0 Alors :
+       Ecrire("Les deux vecteurs sont orthogonaux");
+       Sinon : Ecrire("Les deux vecteurs ne sont pas orthogonaux");
+     Fsi
+     Sinon : Ecrire("Le produit scalaire est infaisable car les vecteurs sont
+             incompatibles en termes de dimensions");
+  Fsi
+
+Fin
